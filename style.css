@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc {
+  height: 34.375rem;
+  width: 34.375rem;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calc .display {
+  height: 20%;
+  width: 90%;
+  border: 1px solid tomato;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calc .display span{
+  font-size: 3rem;
+}
+
+.calc .buttons {
+  height: 75%;
+  width: 90%;
+  border: 1px solid pink;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calc .buttons .numbers {
+  height: 90%;
+  width: 70%;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calc .buttons .numbers .zero{
+    width: 95%;
+    height: 10%;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc .buttons .numbers .zero button{
+    height: 100%;
+    width: 100%;
+}
+
+.calc .buttons .numbers .remainingNumbers{
+    width: 95%;
+    height: 85%;
+    border: 1px solid yellow;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 0.1%;
+}
+
+.calc .buttons .operators {
+  height: 90%;
+  width: 27%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calc .buttons .operators .arthoperators,.calc .buttons .operators .memsci{
+    height: 95%;
+    width: 45%;
+    border: 1px solid green;
+    display: grid;
+    grid-gap: 0.2%;
+}
+
+
+@media (max-width: 980px){
+  html,body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .calc {
+    height: 90%;
+    width: 90%;
+  }
+
+  .calc .display span{
+    font-size: 3rem;
+  }
+
+  .calc .buttons .numbers .zero button{
+    font-size: 1rem;
+  }
+
+  .calc .buttons .numbers .remainingNumbers button,.calc .buttons .operators .arthoperators button,.calc .buttons .operators .memsci button{
+    font-size: 2rem;
+  }
+
+  .calc .buttons .numbers {
+    height: 90%;
+    width: 65%;
+  }
+
+  .calc .buttons .operators {
+    height: 90%;
+    width: 32%;
+  }
+
+  .calc .buttons .numbers .remainingNumbers{
+      grid-gap: 0.3%;
+      grid-row-gap: 5%;
+  }
+
+  .calc .buttons .numbers .remainingNumbers button,.calc .buttons .operators .arthoperators button,.calc .buttons .operators .memsci button{
+    width: 97%;
+    height: 97%;
+  }
+  
+}
+
+
+@media (max-width: 770px){
+  .calc .buttons .numbers .remainingNumbers button,.calc .buttons .operators .arthoperators button,.calc .buttons .operators .memsci button{
+    font-size: 1.8rem;
+  }
+  .calc .buttons .numbers .zero button{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:600px){
+  .calc .buttons .numbers .zero button,.calc .buttons .numbers .remainingNumbers button,.calc .buttons .operators .arthoperators button,.calc .buttons .operators .memsci button{
+    font-size: 1rem;
+  }
+  .calc .display span{
+    font-size: 2rem;
+  }
+}
+

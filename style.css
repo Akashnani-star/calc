@@ -73,6 +73,7 @@ body {
     background-color: #FFFFC7;
     color: #233E8B;
     font-weight: bolder;
+    font-size: 1.8rem;
 }
 
 .calc .buttons .numbers .remainingNumbers{
@@ -87,6 +88,7 @@ body {
   background-color: #FFFFC7;
   color: #233E8B;
   font-weight: bolder;
+  font-size: 2rem;
 }
 
 .calc .buttons .operators {
@@ -104,6 +106,9 @@ body {
     grid-gap: 0.2%;
 }
 
+.calc .buttons .operators .arthoperators button{
+  font-size: 1.8rem;
+}
 
 .calc .buttons .operators .arthoperators button,.calc .buttons .operators .memsci button{
   background-color: #FFFFC7;

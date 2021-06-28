@@ -136,3 +136,6 @@ addEventListener("resize",event=>document.getElementById("width").innerText = in
 
 
 document.getElementById("width").innerText = innerWidth;
+
+document.getElementById("AC").removeEventListener("keyup",(event)=>{})
+document.getElementById("AC").removeEventListener("keydown",(event)=>{})
